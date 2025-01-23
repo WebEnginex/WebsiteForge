@@ -9,6 +9,78 @@ Ce projet, nommé **Assistant personnel pour la création de projets web**, a po
 - **React** pour le front-end
 - **Vite** pour le bundling
 
+## Installation
+
+1. Clonez le repository :
+```bash
+git clone https://github.com/your-repo/assistant-personnel.git
+cd assistant-personnel
+```
+
+2. Installez les dépendances :
+```bash
+npm install
+```
+
+3. Configurez les variables d'environnement :
+```bash
+# Copiez le fichier d'exemple
+cp .env.example .env
+
+# Éditez le fichier .env avec vos propres valeurs
+# VITE_OPENAI_API_KEY=votre_clé_api_openai
+```
+
+4. Lancez l'application en mode développement :
+```bash
+npm run dev
+```
+
+## Configuration requise
+
+- Node.js 16.x ou supérieur
+- npm 7.x ou supérieur
+- Une clé API OpenAI valide
+
+## Variables d'environnement
+
+Les variables d'environnement suivantes sont nécessaires :
+
+- `VITE_OPENAI_API_KEY` : Votre clé API OpenAI
+- `VITE_API_URL` : URL de l'API (par défaut: http://localhost:3000)
+- `VITE_ENV` : Environnement (development, production)
+
+## Développement
+
+Pour lancer l'application en mode développement :
+```bash
+npm run dev
+```
+
+Pour construire l'application pour la production :
+```bash
+npm run build
+```
+
+## Structure du projet
+
+```
+src/
+  ├── components/     # Composants React
+  ├── services/      # Services et API
+  ├── styles/        # Fichiers CSS
+  ├── types/         # Types TypeScript
+  └── config/        # Configuration
+```
+
+## Contribution
+
+1. Fork le projet
+2. Créez votre branche (`git checkout -b feature/AmazingFeature`)
+3. Committez vos changements (`git commit -m 'Add some AmazingFeature'`)
+4. Push vers la branche (`git push origin feature/AmazingFeature`)
+5. Ouvrez une Pull Request
+
 ## Création d'un projet React avec TypeScript et Vite
 
 1. **Créer un nouveau projet Vite** :
